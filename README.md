@@ -6,7 +6,7 @@
 
 ---
 
-# Meme Card
+# Multi-TCG Card Effects
 
 Displays trading cards with 3D holographic CSS effects — built with Svelte + Vite.
 
@@ -81,7 +81,7 @@ Some effects require a specific `subtypes` value:
 
 Card navigation via URL:
 - `/` → card 1 (default)
-- `/meme/2`, `/meme/3`, etc. → card N
+- `/2`, `/3`, etc. → card N
 
 Pagination (prev / numbers / next) is available at the bottom of the screen.
 

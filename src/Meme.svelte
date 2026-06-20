@@ -4,7 +4,7 @@
 
   const CARD_BACKS = {
     pokemon:  "https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg",
-    digimon:  "https://static.wikia.nocookie.net/digimoncardgame/images/c/ce/Digimon-Card-Back.png/revision/latest?cb=20210723050545",
+    digimon:  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9NREM0itup0Ic338yut2xS9GpClaOxyYcTPoZHdS_U5UWeLTxKG1CCc&s=10",
     yugioh:   "https://ms.yugipedia.com//thumb/e/e5/Back-EN.png/800px-Back-EN.png",
     onepiece: "https://cf.geekdo-images.com/cpyej29PfijgBDtiOuSFsQ__imagepage/img/aDMUMr-kD-RtLyOR2sKmzXtaXtk=/fit-in/900x600/filters:no_upscale():strip_icc()/pic6974116.jpg",
   };
@@ -26,7 +26,7 @@
       img: "https://images.ygoprodeck.com/images/cards/33396948.jpg",
       name: "Blue-Eyes White Dragon",
       back: CARD_BACKS.yugioh,
-      effect: { rarity: "rare rainbow", subtypes: "basic", supertype: "pokémon", trainerGallery: false },
+      effect: { rarity: "rare secret", subtypes: "basic", supertype: "pokémon", trainerGallery: false },
     },
     {
       img: "https://static.dotgg.gg/onepiece/card/ST26-005_p1.webp",
@@ -49,7 +49,7 @@
   ];
 
   const getIndexFromUrl = () => {
-    const match = window.location.pathname.match(/\/meme\/(\d+)/);
+    const match = window.location.pathname.match(/^\/(\d+)$/);
     if (match) {
       const n = parseInt(match[1], 10);
       return Math.max(0, Math.min(n - 1, cards.length - 1));
@@ -63,7 +63,7 @@
     if (index === currentIndex) return;
     $activeCard = undefined;
     currentIndex = index;
-    history.pushState({}, "", `/meme/${index + 1}`);
+    history.pushState({}, "", `/${index + 1}`);
   };
 </script>
 
