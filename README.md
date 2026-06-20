@@ -10,6 +10,12 @@
 
 Displays trading cards with 3D holographic CSS effects — built with Svelte + Vite.
 
+| | |
+|---|---|
+| ![Screenshot 1](src/asset/screenshot-1.png) | ![Screenshot 2](src/asset/screenshot-2.png) |
+
+> Architecture overview: [`multi-tcg-card-effects-hld.html`](multi-tcg-card-effects-hld.html)
+
 ## Cards (`src/Meme.svelte`)
 
 Each card is defined in the `cards` array:
@@ -34,10 +40,21 @@ const cards = [
 
 | Key | Source |
 |-----|--------|
-| `pokemon` | Pokemon TCG |
-| `digimon` | Digimon Card Game |
-| `yugioh` | Yu-Gi-Oh! |
-| `onepiece` | One Piece Card Game |
+| `pokemon` | [Pokemon TCG](https://tcg.pokemon.com) |
+| `digimon` | [Digimon Card Game](https://world.digimon.com/en/cardgame/) |
+| `yugioh` | [Yugipedia](https://yugipedia.com) |
+| `onepiece` | [BoardGameGeek](https://boardgamegeek.com) |
+
+### Card Image Sources
+
+| Card | Source |
+|------|--------|
+| Pikachu SWSH032 | [pokemontcg.io](https://pokemontcg.io) |
+| Dark Magician | [YGOPRODeck](https://ygoprodeck.com) |
+| Blue-Eyes White Dragon | [YGOPRODeck](https://ygoprodeck.com) |
+| One Piece ST26-005 | [dotgg.gg](https://dotgg.gg) |
+| TCGPlayer card | [TCGPlayer](https://tcgplayer.com) |
+| Halu Abnormal | Original artwork |
 
 ---
 
