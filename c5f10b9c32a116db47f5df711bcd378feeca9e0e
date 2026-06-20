@@ -1,0 +1,23 @@
+README.md
+  3b2bd9ba777556c0 13-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "c5f10b9c32a116db47f5df711bcd378feeca9e0e",
+  "prompts": {
+    "3b2bd9ba777556c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b740f35f-fc25-4910-8283-d2c4922dcd9a",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "ikhwan.ikhsan <ikhwan.ikhsan@gdn-commerce.com>",
+      "messages": [],
+      "total_additions": 112,
+      "total_deletions": 110,
+      "accepted_lines": 112,
+      "overriden_lines": 0
+    }
+  }
+}
