@@ -1,0 +1,31 @@
+package.json
+  3b2bd9ba777556c0 2
+src/Meme.svelte
+  3b2bd9ba777556c0 52,66
+meme-card-hld.html
+  3b2bd9ba777556c0 1-6,8-443
+README.md
+  3b2bd9ba777556c0 84
+vite.config.js
+  3b2bd9ba777556c0 5-18,20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "38a7f828fce78f2355c803b498ff9a3f1dad9ea5",
+  "prompts": {
+    "3b2bd9ba777556c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b740f35f-fc25-4910-8283-d2c4922dcd9a",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "ikhwan.ikhsan <ikhwan.ikhsan@gdn-commerce.com>",
+      "messages": [],
+      "total_additions": 462,
+      "total_deletions": 8,
+      "accepted_lines": 461,
+      "overriden_lines": 1
+    }
+  }
+}
