@@ -10,6 +10,8 @@
 
 Displays trading cards with 3D holographic CSS effects — built with Svelte + Vite.
 
+**Live:** https://useless-inventions-meme-card-vercel.vercel.app/
+
 | | |
 |---|---|
 | ![Screenshot 1](src/asset/screenshot-1.png) | ![Screenshot 2](src/asset/screenshot-2.png) |
