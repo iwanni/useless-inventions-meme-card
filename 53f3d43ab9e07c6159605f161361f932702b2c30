@@ -1,0 +1,35 @@
+LICENSE
+  3b2bd9ba777556c0 5
+index.html
+  3b2bd9ba777556c0 2,10,16-17,19-44,50
+src/Meme.svelte
+  3b2bd9ba777556c0 3-28,30-41,44-46,48-67,78,80-116,174,177-186,190,193,197,201-215,218-228,231-233,236-240,249-250
+README.md
+  3b2bd9ba777556c0 1-4,9-40,44-76,80,82-84,86,88,90-93
+src/lib/components/MemeCard.svelte
+  3b2bd9ba777556c0 10-14,311,313,326-329,345-346
+vite.config.js
+  3b2bd9ba777556c0 1,4-11
+package.json
+  3b2bd9ba777556c0 2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "53f3d43ab9e07c6159605f161361f932702b2c30",
+  "prompts": {
+    "3b2bd9ba777556c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b740f35f-fc25-4910-8283-d2c4922dcd9a",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "ikhwan.ikhsan <ikhwan.ikhsan@gdn-commerce.com>",
+      "messages": [],
+      "total_additions": 334,
+      "total_deletions": 294,
+      "accepted_lines": 283,
+      "overriden_lines": 2
+    }
+  }
+}
