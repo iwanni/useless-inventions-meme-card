@@ -1,6 +1,12 @@
 <script>
   import MemeCard from "./lib/components/MemeCard.svelte";
   import { activeCard } from "./lib/stores/activeCard.js";
+  import { requestOrientationPermission, needsOrientationPermission, resetBaseOrientation } from "./lib/stores/orientation.js";
+
+  const handleMotionPrompt = async () => {
+    await requestOrientationPermission();
+    resetBaseOrientation();
+  };
 
   const CARD_BACKS = {
     pokemon:  "https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg",
@@ -67,6 +73,13 @@
   };
 </script>
 
+{#if needsOrientationPermission()}
+  <button class="motion-prompt" on:click={handleMotionPrompt}>
+    <span class="motion-icon">📱</span>
+    <span class="motion-text">Tap to enable motion effects</span>
+  </button>
+{/if}
+
 <main class="meme-page">
   <div class="particles">
     {#each Array(30) as _, i}
@@ -118,6 +131,30 @@
 </main>
 
 <style>
+  .motion-prompt {
+    position: fixed;
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    background: hsla(40, 20%, 10%, 0.85);
+    border: 1px solid hsla(40, 60%, 60%, 0.35);
+    border-radius: 2rem;
+    color: hsla(40, 80%, 80%, 0.9);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    white-space: nowrap;
+    animation: pageEntrance 0.6s ease forwards;
+  }
+  .motion-prompt:active { opacity: 0.7; }
+  .motion-icon { font-size: 1.1rem; }
+
   :global(body) {
     margin: 0;
     padding: 0;
