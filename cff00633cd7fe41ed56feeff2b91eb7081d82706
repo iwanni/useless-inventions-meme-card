@@ -1,0 +1,27 @@
+src/lib/components/MemeCard.svelte
+  3b2bd9ba777556c0 5,157
+src/lib/stores/orientation.js
+  3b2bd9ba777556c0 3-6,10-11,16,18-25,28,30-36,38-40,42-49,51-52,54-56,59-63,65-76
+src/Meme.svelte
+  3b2bd9ba777556c0 4-9,76-82,134-157
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "cff00633cd7fe41ed56feeff2b91eb7081d82706",
+  "prompts": {
+    "3b2bd9ba777556c0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b740f35f-fc25-4910-8283-d2c4922dcd9a",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "ikhwan.ikhsan <ikhwan.ikhsan@gdn-commerce.com>",
+      "messages": [],
+      "total_additions": 104,
+      "total_deletions": 42,
+      "accepted_lines": 98,
+      "overriden_lines": 0
+    }
+  }
+}
