@@ -1,0 +1,5 @@
+Multi TCG card effects, dibangun dengan Svelte dan Vite, lalu di-deploy sebagai static site ke Vercel. Credit penuh untuk efek hologram dan CSS kartunya ke website poke-holo.simey.me (simeydotme di GitHub) — kalian wajib cek websitenya.
+
+Saat user membuka URL /meme/N, Vercel mengirim HTML dan bundle JavaScript hasil build Vite. Browser kemudian membaca nomor kartu dari URL, lalu fetch gambar langsung dari CDN eksternal seperti pokemontcg.io, ygoprodeck.com, dan dotgg.gg.
+
+Saat ini sudah support Pokemon, Yu-Gi-Oh, One Piece, dan Digimon dengan 15+ efek hologram efek berbeda. Mau tambah kartu lain? Komen di bawah!
