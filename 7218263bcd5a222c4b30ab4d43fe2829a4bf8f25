@@ -1,0 +1,23 @@
+social-media-post.txt
+  2297111742b09a0b 2,4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.23",
+  "base_commit_sha": "7218263bcd5a222c4b30ab4d43fe2829a4bf8f25",
+  "prompts": {
+    "2297111742b09a0b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "2e33065c-37cf-48b2-8586-6857c0693008",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "ikhwan.ikhsan <ikhwan.ikhsan@gdn-commerce.com>",
+      "messages": [],
+      "total_additions": 7,
+      "total_deletions": 0,
+      "accepted_lines": 2,
+      "overriden_lines": 3
+    }
+  }
+}
